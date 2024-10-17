@@ -37,6 +37,12 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+
+    #my_own_app
+    'accounts',
+
+    #third_party_apps
+
 ]
 
 MIDDLEWARE = [
@@ -116,6 +122,16 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = "static/"
+
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
+
+STATIC_ROOT = BASE_DIR / "static_cdn" / "static_root"
+
+MEDIA_URL = "media/"
+
+MEDIA_ROOT = BASE_DIR / "static_cdn" / "media_root"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
