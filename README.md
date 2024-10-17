@@ -1,0 +1,1 @@
+# django_multi_user_custom_model
